@@ -1,0 +1,576 @@
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+form,
+fieldset,
+input,
+textarea,
+p,
+blockquote,
+th,
+td,
+input {
+  margin: 0px;
+  padding: 0px;
+  line-height: 18px;
+}
+
+#html5-player * {
+  box-sizing: border-box;
+  user-select: none;
+}
+
+.channel-body {
+  height: 370px;
+  padding-top: 1px;
+  background-color: rgba(100, 112, 108, 0.8);
+  border-left: 1px solid rgb(66, 74, 72);
+  line-height: 0.875em;
+}
+
+.buttonconsole {
+  display: inline-block;
+  width: 3em;
+  border-radius: 4px;
+  background-color: rgb(46, 51, 49);
+  padding: 1px;
+  line-height: 0;
+  position: relative;
+  margin-top: -1px;
+}
+
+.buttonconsole > button {
+  font-family: "cabin condensed", sans-serif;
+  font-size: 0.6875em;
+}
+
+.buttonconsole > button {
+  border: none;
+  outline: none;
+  width: 100%;
+  height: 2em;
+  transition: all 250ms ease 0s;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  color: rgb(224, 224, 224);
+  border-radius: 4px;
+  background-color: rgb(56, 62, 60);
+  margin: 0px !important;
+  padding: 0px !important;
+}
+
+.separator {
+  width: 90%;
+  height: 1px;
+  border: 0px;
+  background-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 0.35),
+    rgba(0, 0, 0, 0)
+  );
+}
+
+.balance {
+  display: inline-block;
+  top: -0.75em;
+  position: relative;
+}
+
+.balance-mark {
+  background-color: rgb(56, 62, 60);
+  width: 2px;
+  height: 5px;
+  display: inline-block;
+  margin-bottom: -3px;
+}
+
+.balance_control-bg {
+  z-index: 3;
+  width: 1.5em;
+  height: 1.5em;
+  padding: 4px;
+  border-radius: 50%;
+  background-color: rgb(56, 62, 60);
+}
+
+.balance_control-bg > div {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: rgb(100, 108, 105);
+  cursor: pointer;
+}
+
+.balance_control-bg > div.active {
+}
+
+.balance_control-bg > div > div {
+  width: 4px;
+  height: 4px;
+  margin: 0px auto;
+  border-radius: 50%;
+  background-color: rgb(212, 212, 212);
+}
+
+.balance-label {
+  font-family: "cabin condensed", sans-serif;
+  font-size: 0.5em;
+}
+
+.balance-label {
+  position: absolute;
+  bottom: 2px;
+  color: rgb(208, 208, 208);
+}
+
+.balance-label-left {
+  left: -6px;
+}
+
+#html5-player span {
+  cursor: default;
+}
+
+.balance-label-right {
+  right: -7px;
+}
+
+.balance-mark2 {
+  background-color: rgb(56, 62, 60);
+  width: 1px;
+  height: 5px;
+  display: inline-block;
+  transform: rotate(55deg);
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+}
+
+.balance-mark3 {
+  background-color: rgb(56, 62, 60);
+  width: 1px;
+  height: 5px;
+  display: inline-block;
+  transform: rotate(-55deg);
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+}
+
+.volume {
+  margin-bottom: -0.5em;
+  margin-top: 0.125em;
+  position: relative;
+  z-index: 9;
+}
+
+.volume_bg {
+  width: 22px;
+  position: absolute;
+  margin: 0px auto;
+  left: 22px;
+  padding-top: 4px;
+}
+
+.volume_bg > hr {
+  width: 22px;
+  margin: 0px auto 7px;
+  background-color: rgb(159, 159, 159);
+  border: none;
+  height: 1px;
+}
+
+.ui-slider {
+  position: relative;
+  text-align: left;
+}
+
+.ui-slider-vertical {
+  width: 0.8em;
+  height: 100px;
+}
+
+.ui-widget {
+  font-family: Verdana, Arial, sans-serif;
+  font-size: 1.1em;
+}
+
+.ui-widget-content {
+  border: 1px solid rgb(170, 170, 170);
+  background: rgb(255, 255, 255);
+  color: rgb(34, 34, 34);
+}
+
+.ui-corner-all,
+.ui-corner-top,
+.ui-corner-left,
+.ui-corner-tl {
+  border-top-left-radius: 4px;
+}
+
+.ui-corner-all,
+.ui-corner-top,
+.ui-corner-right,
+.ui-corner-tr {
+  border-top-right-radius: 4px;
+}
+
+.ui-corner-all,
+.ui-corner-bottom,
+.ui-corner-left,
+.ui-corner-bl {
+  border-bottom-left-radius: 4px;
+}
+
+.ui-corner-all,
+.ui-corner-bottom,
+.ui-corner-right,
+.ui-corner-br {
+  border-bottom-right-radius: 4px;
+}
+
+.slider {
+  margin: 0px auto 0.8em;
+  cursor: pointer;
+  width: 8px !important;
+  height: 89px !important;
+  background-color: rgb(61, 65, 69) !important;
+}
+
+.ui-slider .ui-slider-handle {
+  position: absolute;
+  z-index: 2;
+  width: 1.2em;
+  height: 1.2em;
+  cursor: default;
+  touch-action: none;
+}
+
+.ui-slider-vertical .ui-slider-handle {
+  left: -0.3em;
+  margin-left: 0px;
+  margin-bottom: -0.6em;
+}
+
+.ui-state-default,
+.ui-widget-content .ui-state-default,
+.ui-widget-header .ui-state-default {
+  border: 1px solid rgb(211, 211, 211);
+  font-weight: 400;
+  color: rgb(85, 85, 85);
+}
+
+.ui-slider-handle {
+  width: 1em !important;
+  height: 13px !important;
+  margin-bottom: -3px !important;
+  cursor: pointer !important;
+}
+
+.buttonlabel {
+  font-family: "cabin condensed", sans-serif;
+  font-size: 0.6875em;
+}
+
+.buttonlabel {
+  color: rgb(208, 208, 208);
+  display: inline-block;
+  margin-top: -2em;
+}
+
+.channel-body > span {
+  font-family: "cabin condensed", sans-serif;
+  font-size: 0.625em;
+}
+
+.buttonconsole > .button-indicator {
+  width: 0.5em;
+  height: 0.25em;
+  background-color: rgb(34, 38, 37);
+  position: absolute;
+  left: 1.25em;
+  top: 0px;
+  box-sizing: content-box;
+}
+
+.buttonconsole > .button-indicator {
+}
+
+.mute_control > button {
+  background-size: 30%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-image: url("./mute.png") !important;
+}
+
+.crossfade_control > button {
+  background-size: 32%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-image: url("./crossfade.png") !important;
+}
+
+.crossfade_control.active > .button-indicator {
+  background-color: rgb(12, 218, 1);
+  box-shadow: rgba(0, 0, 0, 0.2) 0px -1px 7px 1px,
+    rgb(19, 110, 0) 0px -1px 9px inset, rgb(137, 255, 0) 0px 2px 12px;
+}
+
+.crossfade_control.active > button {
+  box-shadow: rgba(29, 32, 31, 0.25) 0px 1px 2px 1px inset;
+}
+
+.buttonconsole.active > .button-indicator {
+  background-color: rgb(12, 218, 1);
+  box-shadow: rgba(0, 0, 0, 0.2) 0px -1px 7px 1px,
+    rgb(19, 110, 0) 0px -1px 9px inset, rgb(137, 255, 0) 0px 2px 12px;
+}
+
+.buttonconsole.active > button {
+  box-shadow: rgba(29, 32, 31, 0.25) 0px 1px 2px 1px inset;
+}
+
+.mute_control.active > .button-indicator {
+  background-color: rgb(218, 12, 1);
+  box-shadow: rgba(0, 0, 0, 0.2) 0px -1px 7px 1px,
+    rgb(110, 19, 0) 0px -1px 9px inset, rgb(255, 137, 0) 0px 2px 12px;
+}
+
+.mute_control.active > button {
+  box-shadow: rgba(32, 29, 31, 0.25) 0px 1px 2px 1px inset;
+}
+
+.random_control > button {
+  background-size: 28%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-image: url("./random.png") !important;
+}
+
+.randomsettings_control {
+  display: none;
+  background-color: rgb(34, 37, 36);
+  color: rgb(255, 255, 255);
+  width: 3em;
+  padding-top: 0.25em;
+  margin-top: -4px;
+  border-radius: 0px 0px 4px 4px;
+  cursor: pointer;
+  transition: display 2s ease 0s;
+}
+
+.randomsettings_control.active {
+  display: inline-block;
+}
+
+.randomsettings_control > span {
+  font-family: "cabin condensed", sans-serif;
+  font-size: 0.625em;
+}
+
+.randomsettings_control > span {
+  cursor: pointer !important;
+}
+
+#complete-mixer-box {
+  width: 635px;
+  height: 440px;
+  padding: 0px;
+  margin: 10px 0px 0px 10px;
+  position: relative;
+}
+
+#mixer-gui-box {
+  width: 615px;
+  height: 420px;
+  padding: 0px;
+  margin: 0px;
+  top: 10px;
+  left: 10px;
+  position: absolute;
+}
+
+#html5-player {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  opacity: 0.9;
+  overflow: hidden;
+  position: relative;
+  box-sizing: border-box;
+  clear: both;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 17px;
+}
+
+#channels {
+  position: relative;
+  left: 0px;
+  display: table;
+  table-layout: fixed;
+  border-bottom: 4px solid rgb(66, 74, 72);
+  border-radius: 5px;
+  margin: 0px;
+  vertical-align: bottom;
+  text-align: center;
+  transition: opacity 400ms ease 0s, left 400ms ease 0s;
+  width: 615px;
+  height: 415px;
+}
+
+#channels-left-border {
+  width: 3px;
+  display: table-cell;
+  text-align: center;
+  vertical-align: bottom;
+}
+
+#channels-left-border > div {
+  height: 370px;
+  background-color: rgb(66, 74, 72);
+  border-radius: 5px 0px 0px;
+}
+
+.channel:nth-child(2) {
+  border-radius: 30px;
+}
+
+.channel {
+  display: table-cell;
+  padding: 0px;
+  text-align: center;
+  height: 415px;
+}
+
+.channel-header {
+  width: 100%;
+  height: 45px;
+  margin: 0px;
+  padding-top: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  display: inline-block;
+  border: 2px solid rgb(35, 41, 46);
+  border-radius: 5px 5px 0px 0px;
+  background-color: rgb(47, 51, 50);
+  line-height: 0;
+}
+
+.channel-number {
+  font-family: "cabin condensed", sans-serif;
+  font-size: 0.625em;
+  line-height: 0.95em;
+  overflow-wrap: break-word;
+}
+
+.channel-number {
+  margin-top: 10px;
+  color: rgb(175, 175, 175);
+}
+
+.inputfile {
+  width: 100%;
+  word-break: keep-all;
+  overflow: hidden;
+  display: inline-block;
+  text-align: center;
+  margin-top: 5px;
+}
+
+.inputfile-name {
+  font-family: "cabin condensed", sans-serif;
+  font-size: 0.75em;
+  line-height: 0.95em;
+  overflow-wrap: break-word;
+}
+
+.inputfile-name {
+  display: inline-block;
+  white-space: nowrap;
+  position: relative;
+  color: rgb(240, 240, 240);
+}
+
+.masterchannel {
+  width: 65px;
+  display: table-cell;
+  text-align: center;
+  vertical-align: bottom;
+}
+
+.masterchannel-bg {
+  background-color: rgb(66, 74, 72);
+  height: 370px;
+  border-radius: 0px 5px 0px 0px;
+  position: relative;
+  text-align: center;
+  padding-top: 3.1875em;
+  transition: background-color 400ms ease 0s;
+}
+
+.masterchannel-bg-inner {
+  background-color: rgb(66, 74, 72);
+  padding-top: 0.25em;
+  padding-bottom: 1.25em;
+  border-radius: 5px;
+}
+
+.mastervolume .volume_bg > hr {
+  background-color: rgb(115, 115, 115) !important;
+}
+
+.mastercontrol_mute.active {
+  background-size: 30%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-image: url("./stop.png") !important;
+  transition: none 0s ease 0s !important;
+}
+
+.mastercontrol_mute {
+  background-size: 30%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-image: url("./play.png") !important;
+  transition: none 0s ease 0s !important;
+}
+
+.mixer-save-control {
+  transition: opacity 400ms ease 0s;
+}
+
+.buttonspacer {
+  width: auto;
+  height: 2px;
+}
+
+a:active {
+  outline: none;
+}
+
+a:focus {
+}
+
+a {
+  color: rgb(153, 0, 0);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
